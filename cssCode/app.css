@@ -1,0 +1,221 @@
+header{
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(#0A192F);
+    
+} 
+header img{
+    width: 150px;
+    height: 150px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+   margin-left: 100px;
+   margin-top: 25px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+header nav ul li a:hover{
+    text-decoration: none;
+
+    border:3px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+/* <-------------  part of slider  ------------> */
+.slider{
+
+    width:80%;
+    margin-top: 50px;
+    margin: 20px auto;
+
+}
+.slider img{
+
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* <-------------  part of sections  ------------> */
+
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+#section1{
+     width: 27%;
+    
+}
+/* <-------------  part of currency  ------------> */
+#section1 #currency{
+    width: 100%;
+    height: 60vh;
+    border: 3px solid rgb(36, 212, 160);
+    box-shadow: 10px 10px 1px #999;
+    margin-top: 5px;
+    padding: 0;
+}
+/* <-------------  part of weather  ------------> */
+#section1 #weather{
+    border: 2px solid red;
+     width: 100%;
+    height:56vh;
+    margin-top: 30px;
+   text-align: center;
+  box-shadow: 10px 10px 1px #999;
+}
+#degree img {
+  width: 120px;
+  height: 120px;
+}
+
+#degree h1 {
+  color: white;
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+#degree p {
+  font-size: 24px;
+  color: #f2f2f2;
+  margin: 0;
+}
+
+#humidity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: white;
+}
+
+#humidity img {
+  width: 60px;
+  height: 60px;
+}
+
+#humidity-value {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+}
+
+#humidity h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* <-------------  part of news  ------------> */
+#section2 {
+    width: 70%;
+    height: auto; 
+    margin: 10px auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap; 
+    padding: 10px;
+}
+
+#section2 a {
+
+    text-decoration: none;
+    color: inherit;
+    width: 23%; 
+    min-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#section2 a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#section2 section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#section2 section h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    overflow: hidden;
+   
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    #section2 a {
+        width: 48%; /* عنصران في كل سطر */
+    }
+}
+
+@media (max-width: 576px) {
+    #section2 a {
+        width: 100%; /* عنصر واحد في كل سطر */
+    }
+}
+/* <-------------  part of footer  ------------> */
+footer{
+    background:linear-gradient(#0A192F);
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 180px;
+}
+.links{
+    padding: 40px;
+}
+.links >a{
+    margin-left: 10px;
+    color: white;
+}
+.links>a:hover{
+    color: black;
+    transform: scale(1.5);
+}
+footer h3{
+    color: black;
+    border: white;
+    background-color: white;
+    border-radius: 6px;
+    margin-right:50px ;
+    padding: 10px;
+}
